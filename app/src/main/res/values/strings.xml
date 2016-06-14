@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ElektroBicikl</string>
+    <string name="odkupna_cena">Odkupna cena</string>
+    <string name="b">B</string>
+    <string name="reset">RESET</string>
+    <string name="odkupna_cena_vrednost">0.5EUR/kWh</string>
+    <string name="prisluzen_denar">Prislužen denar</string>
+    <string name="prisluzen_denar_vrednost">0 EUR</string>
+    <string name="proizvedena_energija">Proizvedena Energija</string>
+    <string name="proizvedena_energija_vrednost">0 kWh</string>
+    <string name="nastaviHint">NASTAVI</string>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebapc.elektrobicikl.MainActivity"
+    android:background="@color/black">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/resetGumb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="resetiraj"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/odkupna_cena"
+        android:id="@+id/odkupnaCena"
+        android:layout_toRightOf="@id/resetGumb"
+        android:textColor="#FFFFFF"
+         />
+
+    <EditText
+        android:hint="@string/nastaviHint"
+        android:textColorHint="#FFF"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/odkupnaCenaVrednost"
+        android:textAlignment="center"
+        android:layout_alignLeft="@id/odkupnaCena"
+        android:layout_alignRight="@id/odkupnaCena"
+        android:layout_below="@+id/odkupnaCena"
+        android:onClick="spremeniOdkupnoCeno"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prisluzen_denar"
+        android:id="@+id/prisluzenDenar"
+        android:layout_alignTop="@+id/odkupnaCena"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prisluzen_denar_vrednost"
+        android:textAlignment="center"
+        android:layout_alignLeft="@id/prisluzenDenar"
+        android:layout_alignRight="@id/prisluzenDenar"
+        android:id="@+id/prisluzenDenar_vrednost"
+        android:layout_below="@id/prisluzenDenar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@id/odkupnaCenaVrednost"
+        android:gravity="center"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proizvedena_energija"
+        android:id="@+id/proizvedenaEnergija"
+        android:layout_alignTop="@id/odkupnaCena"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proizvedena_energija_vrednost"
+        android:textAlignment="center"
+        android:layout_alignLeft="@id/proizvedenaEnergija"
+        android:layout_alignRight="@id/proizvedenaEnergija"
+        android:id="@+id/proizvedenaEnergijaVrednost"
+        android:layout_alignBottom="@id/odkupnaCenaVrednost"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/proizvedenaEnergija"
+        android:gravity="center"/>
+
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="480dp"
+        android:layout_height="280dp"
+        android:id="@+id/graph"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+
+
+        />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="70dp"
+        android:layout_height="250dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"
+        android:max="100"
+        android:progress="33"
+        android:progressDrawable="@drawable/progress_drawable" />
+
+
+</RelativeLayout>
